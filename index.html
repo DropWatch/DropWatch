@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dropwatch</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Dropwatch</h1>
+    <nav>
+      <a href="index.html">Home</a> | 
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="map-buttons">
+      <button onclick="showBaseMap()">Base Map</button>
+      <button onclick="updateMap(2025)">2025</button>
+      <button onclick="updateMap(2026)">2026</button>
+      <button onclick="updateMap(2027)">2027</button>
+      <button onclick="updateMap(2028)">2028</button>
+      <button onclick="updateMap(2029)">2029</button>
+      <button onclick="updateMap(2030)">2030</button>
+    </div>
+
+    <div id="map"></div>
+  </main>
+
+  <div class="legend">
+    <h4>Subsidence Risk Level</h4>
+    <div><span style="background: green"></span> Low</div>
+    <div><span style="background: yellow"></span> Moderate</div>
+    <div><span style="background: red"></span> High</div>
+    <div><span style="background: #6a0dad"></span> Very High</div>
+  </div>
+
+  <script src="js/map.js"></script>
+</body>
+</html>
